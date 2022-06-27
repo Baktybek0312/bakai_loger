@@ -4,6 +4,7 @@ from sqlalchemy import (
     Column, String, DateTime,
     Integer, ForeignKey, BigInteger
 )
+from sqlalchemy.dialects.postgresql import JSON
 from sqlalchemy.orm import relationship
 
 from db.database import Base
@@ -18,7 +19,7 @@ class Log(Base):
     row_id = Column(BigInteger)
     created_date = Column(DateTime, default=datetime.utcnow)
     manager_id = Column(Integer, ForeignKey('manager.id', ondelete='CASCADE'))
-    new_value = Column(String)
+    new_value = Column(JSON)
 
     project = relationship('Project', back_populates='log')
     tables = relationship('Tables', back_populates='log')

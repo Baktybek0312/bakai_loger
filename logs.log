@@ -8,3 +8,7 @@
 2022-06-24 17:38:43,388 | INFO | Status code: 200
 2022-06-24 17:38:43,829 | INFO | GET http://127.0.0.1:8008/openapi.json
 2022-06-24 17:38:43,830 | INFO | Status code: 200
+2022-06-27 09:49:12,852 | INFO | GET http://127.0.0.1:8008/
+2022-06-27 09:49:12,869 | INFO | Status code: 200
+2022-06-27 10:24:44,107 | INFO | GET http://127.0.0.1:8008/openapi.json
+2022-06-27 10:24:44,124 | INFO | Status code: 200
